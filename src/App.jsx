@@ -42,7 +42,7 @@ function App() {
           ? city
           : `${coords.latitude},${coords.longitude}`;
         const res = await fetch(
-          `http://api.weatherapi.com/v1//current.json?key=${KEY}&q=${query}`,
+          `https://api.weatherapi.com/v1//current.json?key=${KEY}&q=${query}`,
           { signal }
         );
 
